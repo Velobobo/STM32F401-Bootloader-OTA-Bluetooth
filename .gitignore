@@ -1,0 +1,17 @@
+Bootloader_OTA_update/Debug/
+Bootloader_OTA_update/Release/
+Bootloader_OTA_update/.settings/
+
+Bootloader_Application/Debug/
+Bootloader_Application/Release/
+Bootloader_Application/.settings/
+Bootloader_Application/SlotA/
+Bootloader_Application/SlotB/
+
+
+*.o
+*.elf
+*.bin
+*.map
+*.list
+*.launch

@@ -1,0 +1,35 @@
+Sector 0-1 bootloader 32kb
+Sector 2 metadata 16kb
+Sector 3-5 slot A 208kb
+Sector 6-7 slot B 256kb
+
+Max firmware size = 205kb
+
+I will use a 2kb buffer in ram for receiving the firmware data.
+
+I will use a packet like Sof , seq , size , data , crc
+Size of data = 512bytes
+
+If a particular gpio pin is high at the start of the bootloader then go to update mode if not then just jump to the confirmed slot
+
+
+The host will give START to the boot first ,the boot erases the free slot sectors,
+the boot replies with which slot is free A or B to the host ,
+then the host sends the build image compiled and linked for the particular Slot .
+Then host sends the pack , the boot ACKS if the crc is right , if crc wrong then boot NACKS ,
+then the host resends that sequence. When the buffer is full ,
+flash write to the sector while keeping track of the offsets written in the flash.
+Then host replies with END if all the data transferred
+
+
+
+my protocol is like 
+
+
+client sends START
+stm sends ACK + <Which_slot_free>
+client receives the slot and then sends the firmware for that slot
+
+we receive the firmware in 512 bytes chunks in the 2kb  buffer, verify crc for each packet and if 2kb buffer full flush it into flash.
+
+
