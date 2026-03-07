@@ -12,12 +12,12 @@ A bare-metal OTA bootloader for the STM32F401 that receives firmware updates ove
 
 ## Flash Memory Layout
 
-
+```
 Sector 0-1  │  Bootloader   │  32 KB
 Sector 2    │  Metadata     │  16 KB
 Sector 3-5  │  Slot A       │  208 KB
 Sector 6-7  │  Slot B       │  256 KB
-
+```
 Max firmware size: 208 KB
 
 ---
@@ -41,6 +41,7 @@ Stored in Sector 2. Tracks the state of both firmware slots across resets.
 At startup the bootloader reads **PC10**:
 
 PC10 HIGH  ->  Enter Update Mode
+
 PC10 LOW   ->  Enter Boot Mode
 
 ---
