@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.1">
+  <diagram name="Page-1" id="D9OVbaiWTBfkirxpCmPB">
+    <mxGraphModel dx="1042" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-3" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="RoiMFTi-TrdX_8I3Ckj2-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BOOT&lt;br&gt;(Reset)" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-4" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-8" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-2" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" value="Reset by Watchdog ?" vertex="1">
+          <mxGeometry height="60" width="157" x="347" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="YES" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="NO" vertex="1">
+          <mxGeometry height="30" width="60" x="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-11" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-19" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="220" />
+            </Array>
+            <mxPoint x="240" y="150" as="sourcePoint" />
+            <mxPoint x="420" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Pending==0?" vertex="1">
+          <mxGeometry height="60" width="80" x="200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Stable App Crashed&lt;br&gt;Jump to Active Slot" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="YES" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;NO&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="230" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-22" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-25" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-21" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="GPIO HIGH ?" vertex="1">
+          <mxGeometry height="60" width="110" x="370.5" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="YES" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Enter Update Mode" vertex="1">
+          <mxGeometry height="40" width="120" x="580" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="NO" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-28" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-30" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-27" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Pending==1?" vertex="1">
+          <mxGeometry height="50" width="104.5" x="373" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="YES" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Jump to Active Slot" vertex="1">
+          <mxGeometry height="40" width="120" x="130" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;NO&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-36" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-39" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="boot_tries &amp;lt; 3 ?" vertex="1">
+          <mxGeometry height="60" width="125.5" x="362.75" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="NO" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="New Firmware Failed&lt;br&gt;Rollback To ActiveSlot&lt;br&gt;set pending=0" vertex="1">
+          <mxGeometry height="60" width="130" x="580" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;YES&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="425" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-42" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-46" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="boot_tries++&lt;br&gt;Jump to Trial Slot" vertex="1">
+          <mxGeometry height="60" width="120" x="368.25" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-45" edge="1" parent="1" source="RoiMFTi-TrdX_8I3Ckj2-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="630" />
+              <mxPoint x="780" y="90" />
+            </Array>
+            <mxPoint x="760" y="630" as="sourcePoint" />
+            <mxPoint x="430" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Crashed/Hanged&lt;br&gt;Reset By Watchdog" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="RoiMFTi-TrdX_8I3Ckj2-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="No Crash&lt;br&gt;pending = 0&lt;br&gt;Set active_slot = trial_slot" vertex="1">
+          <mxGeometry height="60" width="149.5" x="354.5" y="710" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
