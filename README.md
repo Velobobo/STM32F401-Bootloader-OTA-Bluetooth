@@ -28,8 +28,11 @@ Stored in Sector 2. Tracks the state of both firmware slots across resets.
 
 
 `magic`       -   Validates that metadata section is not corrupted
+
 `active_slot` -  The currently confirmed good slot (A or B)
+
 `pending`     -  Set to 1 when a new firmware is waiting to be verified
+
 `boot_tries`  -  Counts boot attempts of the pending firmware (max 3)
 
 ---
@@ -61,7 +64,7 @@ SOF(1) | SEQ(2) | LEN(2) | DATA(1-512) | CRC32(4)
 ```
 
 - **CRC32** is calculated over the DATA segment only
-- **SEQ** mismatch / CRC Invalid triggers a NACK
+- **SEQ** mismatch / CRC Invalid triggers a NACK 
 - On **NACK** the host retransmits the same packet
 
 ---
@@ -79,6 +82,7 @@ If the firmware never calls `Confirm_Boot()` the watchdog resets the device. Aft
 Two layers of CRC32 validation are used:
 
 Per-packet CRC32 - Detects corruption in transit
+
 Full firmware CRC32 - Confirms complete image integrity before marking pending
 
 
@@ -87,8 +91,11 @@ Full firmware CRC32 - Confirms complete image integrity before marking pending
 ## Rollback Protection
 
 Firmware boots and confirms -> `active_slot` updated, `pending` cleared
+
 Firmware crashes / hangs -> Watchdog resets device, `boot_tries` incremented
+
 `boot_tries` reaches 3 -> `pending = 0`, boot falls back to previous `active_slot`
+
 Corrupted OTA transfer -> Full firmware CRC fails, `pending` never set, system reset
 
 ---
@@ -96,6 +103,7 @@ Corrupted OTA transfer -> Full firmware CRC fails, `pending` never set, system r
 ## Project Structure
 
 Bootloader_OTA_Update/       # Bootloader - lives permanently on chip
+
 Bootloader_Application/      # Firmware image uploaded over Bluetooth
 
 
@@ -106,6 +114,7 @@ Bootloader_Application/      # Firmware image uploaded over Bluetooth
 The `Bootloader_Application` project has two build configurations:
 
 `SlotA` linked for Slot A base address (Sector 3) 0x0800C000
+
 `SlotB` linked for Slot B base address (Sector 6) 0x08040000
 
 The bootloader tells the host which slot is free. The host_python_script selects and sends the matching binary.
