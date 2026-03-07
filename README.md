@@ -6,7 +6,7 @@ A bare-metal OTA bootloader for the STM32F401 that receives firmware updates ove
 
 ## Demo
 
-
+[▶ Watch Demo Video](https://drive.google.com/file/d/1i_AFrymVdxrMdvStYnfRlmnnQgHjfDGe/view?usp=drive_link)
 
 ---
 
